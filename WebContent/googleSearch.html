@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="jquery-3.4.1.min.js"></script>
+
+    <style>
+        @font-face {
+            font-family: Raleway;
+            src: url(Raleway-SemiBold.ttf);
+        }
+
+        body {
+            font-family: Raleway;
+        }
+
+        /* The Modal (background) */
+        .modal {
+            position: fixed;
+            /* Stay in place */
+            z-index: 1;
+            /* Sit on top */
+            padding-top: 250px;
+            /* Location of the box */
+            left: 0;
+            top: 0;
+            width: 100%;
+            /* Full width */
+            height: 100%;
+            /* Full height */
+            overflow: auto;
+            /* Enable scroll if needed */
+            
+        }
+
+        /* Modal Content */
+        .modal-content {
+            background-color:snow;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+            text-align: center;
+        }
+
+        /* The Close Button */
+        .close {
+            color: #aaaaaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #000;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 50%;
+            font-size: 20px;
+            font-family: Raleway;
+            
+        }
+
+        a{
+            color:antiquewhite;
+            text-decoration: none;
+        }
+        a:hover{
+            color: teal;
+        }
+        
+        input {
+	font-family: Raleway;
+	text-align: center;
+	
+}
+        
+    </style>
+</head>
+
+<body>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <p> </p>
+            
+            
+        </div>
+
+    </div>
+
+    <script>
+        $("document").ready(function(){
+            var choice=confirm("You are about to leave 404Found! Press OK if you are Sure of this?")
+            var value= document.getElementById("input").value
+            if(choice){
+                $("p").text("Click here for Redirecting to Google!.....")
+                $("p").append("<br><br><form action='Google1'>  <button value="+ value +" name='type'>Click Here</button> </form>")
+            }
+            else{
+                $("p").append("<br><br><a href='index.html' > Click Here to go Home</a>")
+            }
+        }) 
+    </script>
+</body>
+
+</html>

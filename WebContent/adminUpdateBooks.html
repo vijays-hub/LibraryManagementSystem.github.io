@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404Found! | Admin</title>
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+    <style>
+        @font-face {
+            font-family: Raleway;
+            src: url(Raleway-SemiBold.ttf);
+        }
+
+        body {
+            font-family: Raleway;
+        }
+
+        .container {
+            text-align: center;
+            background-color: darkkhaki;
+            box-shadow: 20px 20px 50px 5px #719ECE;
+            border-bottom: 3%;
+        }
+
+        nav {
+            box-shadow: 20px 20px 50px 10px #719ECE;
+        }
+
+
+        button {
+            height: 50px;
+            background-color: white;
+            border-radius: 30%;
+        }
+
+        select {
+            border: none;
+            height: 50px;
+            width: 180px;
+            /* border-radius: 5%; */
+        }
+
+
+
+
+        select:focus {
+            outline: none !important;
+            outline-style: groove;
+            border: 1px solid slategray;
+
+        }
+
+        input {
+            border: none;
+            height: 50px;
+            width: 280px;
+            margin-left: -5px;
+            /* border-radius: 3%; */
+            padding: 10px;
+        }
+
+        input:focus {
+            outline: none !important;
+            outline-style: groove;
+            border: 1px solid slategray;
+
+        }
+
+        button{
+            height: 50px;
+            width: 100px;
+            border-radius: 0%;
+            margin-left: -10px;
+        }
+
+        button:focus{
+            outline: none !important;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <div class="container" style="width: 1200px;  box-shadow: 20px 20px 50px  darkgray;">
+        <div class="page-header">
+            <h1
+                style="text-align: center;background-color:whitesmoke; height: 80px; padding: 15px; margin-bottom: -10px;">
+                <span style="color: red;">404</span><span>Found!</span></h1>
+        </div>
+    </div>
+    <br><br>
+    <nav class="navbar navbar-expand-sm navbar-primary sticky-top"
+        style="height: auto; background-color: teal; border-bottom: 1px solid black; color:white;" id="nav">
+        <ul class="navbar-nav" id="ul">
+            <li class="nav-item bg-light" style=" border-radius: 5%;">
+                <a class="nav-link bg-danger" href="admin.html" style="color: black;">Go back</a>
+            </li>
+        </ul>
+        <h3 style="margin-left: 34%;">Admin Update Portal</h3>
+
+
+    </nav>
+
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4" style="text-align: center; padding-top: 1%;padding-left: 5%;">
+                <h3 style="margin-left: 80px;">Update Books</h3>
+                <img src="book_update.jpg" alt="" style="height: 250px;">
+            </div>
+            <div class="col-sm-8">
+                <br>
+                <br>
+                <p>Please Specify the Updation Details...</p>
+                <form action="UpdateBookServlet">
+					<select name="updateOption" style="padding-left: 35px;">
+						<option selected="true" disabled="disabled">Update</option>
+						<option value="book_name">Book Name</option>
+						<option value="book_author">Author</option>
+						<option value="book_rating">Rating</option>
+						<option value="book_category">Category</option>
+						<option value="book_price">Price</option>
+						<option value="book_rating">Rating</option>
+                    </select> 
+                    <br><br>
+                    <input type="text" placeholder="Enter updation value" name="keyword">
+                    <br><br>
+                    <input type="number" placeholder="Provide the Book ID of updation" name="id">
+                    <br><br>
+					<button type="submit">
+					Update!
+					</button>
+				</form>
+                <br><br>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

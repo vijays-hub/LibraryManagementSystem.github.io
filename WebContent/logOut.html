@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404Found! | User</title>
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+    <style>
+        @font-face {
+            font-family: Raleway;
+            src: url(Raleway-SemiBold.ttf);
+        }
+
+        body {
+            font-family: Raleway;
+        }
+
+        .container {
+            text-align: center;
+            background-color: darkkhaki;
+            box-shadow: 20px 20px 50px 5px #719ECE;
+            border-bottom: 3%;
+        }
+
+        nav {
+            box-shadow: 20px 20px 50px 10px #719ECE;
+        }
+
+       
+        button {
+            height: 50px;
+            background-color: white;
+            border-radius: 30%;
+        }
+
+        select {
+            border: none;
+            height: 50px;
+            width: 180px;
+            border-radius: 5%;
+        }
+
+
+        select:focus {
+            outline: none !important;
+            outline-style: groove;
+            border: 1px solid slategray;
+
+        }
+
+        input {
+            border: none;
+            height: 50px;
+            width: 300px;
+            margin-left: -1px;
+            border-radius: 3%;
+        }
+
+        input:focus {
+            outline: none !important;
+            outline-style: groove;
+            border: 1px solid slategray;
+
+        }
+
+        input[type=image] {
+            height: 50px;
+            width: 50px;
+            margin-bottom: -19.5px;
+        }
+
+        .adminButton1 {
+            margin-top: 30px;
+            width: 280px;
+            border: none;
+            font-size: 32px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container" style="width: 1200px;  box-shadow: 20px 20px 50px  darkgray;">
+        <div class="page-header">
+            <h1
+                style="text-align: center;background-color:whitesmoke; height: 80px; padding: 15px; margin-bottom: -10px;">
+                <span style="color: red; text-decoration: overline black;">404</span><span style="text-decoration: underline red;">Found!</span>
+            </h1>
+        </div>
+    </div>
+    <br><br>
+    <nav class="navbar navbar-expand-sm navbar-primary sticky-top"
+        style="height: auto; background-color: teal; border-bottom: 1px solid black; color:white;" id="nav">
+        <h3 style="margin-left: 44%;">User Zone</h3>
+    </nav>
+
+    <br><br>
+    <div class="container">
+        <br><br>
+        <h4>Browse through the Library</h4>
+        <br>
+        <div class="row" style="height: 150px;">
+            <div class="col-sm-12">
+                <form action="BookDisplayServlet" method="">
+                    <button title="Click to display books" style="border-radius: 5%;" name="type" value="user">Books in your Shelf</button>
+                </form>
+                <br>
+                [OR]
+                <br><br>
+                <form action="" method="">
+                    <select id="searchOptions">
+                        <option selected="true" disabled="disabled">Search By:</option>
+                        <option>Book Name</option>
+                        <option>Author</option>
+                        <option>Rating</option>
+                        <option>Category</option>
+                        <option>Price</option>
+                    </select>
+                    <input type="text" placeholder="Enter your keyword">
+                    <input type="image" src="search_icon.jpg">
+                </form>
+            </div>
+        </div>
+    </div>
+    <br><br>
+
+    <div class="container" style="background-color: white;">
+        <div class="row">
+            <div class="col-sm-6">
+                <br>
+                <div class="card">
+                    <br>
+                    <form action="AddBooksServlet">
+                        <img src="add_book.jpg" alt="add_book img"
+                            style="width:50%; height: 40%; margin-left: 15%;" title="Add Books"> <br>
+                        <button style="font-family: Raleway;" class="adminButton1" title="click" name="type" value="user">Add to Shelf</h2>
+                    </form>
+                    <br><br>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <br>
+                <div class="card">
+                    <br>
+                    <form action="">
+                        <img src="return-book.png" alt="return-book img"
+                            style="width:50%; height: 40%; margin-left: 5%;" title="Return Books"> <br>
+                        <button style="font-family: Raleway;" class="adminButton1" title="click" name="type" value="user">Return Books</h2>
+                    </form>
+                    <br><br>
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <div class="row">
+            <div class="col-sm-6">
+                <br>
+                <div class="card">
+                    <br>
+                    <form action="userInfo.html">
+                        <img src="manage_users.svg" alt="Account Info img"
+                            style="width:50%; height: 40%; margin-left: 5%;" title="Account Info"> <br>
+                        <button style="font-family: Raleway;" class="adminButton1" title="click" name="type" value="user">Account Info</h2>
+                    </form>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <br>
+                <div class="card">
+                    <br>
+                    <form action="index.html">
+                        <img src="LogOut.svg" alt="Log Out img"
+                            style="width:50%; height: 40%; margin-left: 5%;" title="Log Out"> <br>
+                        <button style="font-family: Raleway;" class="adminButton1" title="click to Log Out" >Log Out</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <br><br>
+    </div>
+    <br><br>
+</body>
+</html>

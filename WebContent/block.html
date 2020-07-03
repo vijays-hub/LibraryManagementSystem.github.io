@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>404Found! | Block Area</title>
+    <style>
+        @font-face {
+            font-family: Raleway;
+            src: url(Raleway-SemiBold.ttf);
+        }
+
+        body {
+            font-family: Raleway;
+        }
+
+        /* The Modal (background) */
+        .modal {
+            position: fixed;
+            /* Stay in place */
+            z-index: 1;
+            /* Sit on top */
+            padding-top: 250px;
+            /* Location of the box */
+            left: 0;
+            top: 0;
+            width: 100%;
+            /* Full width */
+            height: 100%;
+            /* Full height */
+            overflow: auto;
+            /* Enable scroll if needed */
+            background-color: rgb(0, 0, 0);
+            /* Fallback color */
+            background-color: rgba(0, 0, 0, 0.4);
+            /* Black w/ opacity */
+           
+        }
+
+        /* Modal Content */
+        .modal-content {
+            background-color:snow;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+            text-align: center;
+            box-shadow: 20px 20px 50px 50px burlywood;
+        }
+
+        /* The Close Button */
+        .close {
+            color: #aaaaaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #000;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 50%;
+            font-size: 20px;
+            font-family: Raleway;
+            
+        }
+
+        button:hover{
+           text-decoration: underline;
+        }
+        
+        
+    </style>
+</head>
+
+<body>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Sorry too many attempts! You have been restricted to access our Library for next 2 hours. </p>
+            <form action="index.html">
+                <button onclick="index.html"> Go back Home!</button>
+            </form>
+            
+        </div>
+
+    </div>
+</body>
+
+</html>

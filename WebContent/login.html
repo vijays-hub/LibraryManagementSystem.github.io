@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>404Found! | Login Zone</title>
+
+  <style>
+     @font-face {
+      font-family: Raleway;
+      src: url(Raleway-SemiBold.ttf);
+    }
+    body {
+      font-family: Raleway;
+    }
+
+    /* Full-width input fields */
+    input[type=text],
+    input[type=password] {
+      width: 95%;
+      padding: 12px 20px;
+      margin: 10px 0;
+      display: inline-block;
+      background: none;
+      border: none;
+      border-bottom: 2px solid brown;
+      border-radius: 3%;
+      font-family: Raleway;
+    }
+
+    /* Set a style for all buttons */
+    button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    button:hover {
+      opacity: 0.8;
+    }
+
+    /* Extra styles for the cancel button */
+    .cancelbtn {
+      width: 30%;
+      padding: 10px 18px;
+      background-color: #f44336;
+      font-family: Raleway;
+      height: 45px;
+      margin-left: 9%;
+    }
+
+    /* Center the image and position the close button */
+    .imgcontainer {
+      text-align: center;
+      margin: 24px 0 12px 0;
+      position: relative;
+    }
+
+    img.avatar {
+      width: 10%;
+      border-radius: 100%;
+    }
+
+    .container {
+      padding: 16px;
+    }
+
+    span.psw {
+      float: right;
+      padding-top: 16px;
+    }
+
+    /* The Modal (background) */
+    .modal {
+      /* display: none; */
+      /* Hidden by default */
+      position: fixed;
+      /* Stay in place */
+      left: 0;
+      top: 0;
+      width: 100%;
+      /* Full width */
+      height: 100%;
+      /* Full height */
+      background-color: rgb(0, 0, 0);
+      /* Fallback color */
+      background-color: rgba(0, 0, 0, 0.4);
+      /* Black w/ opacity */
+      padding-top: 57px;
+      overflow: scroll;
+    }
+
+    /* Modal Content/Box */
+    .modal-content {
+      background-color:bisque;
+      border-radius: 15%;
+      margin: 2% 25% 0% 30%;
+      border: 1px solid #888;
+      width: 40%;
+      font-family: Raleway;
+      color: teal;
+    }
+
+    /* The Close Button (x) */
+    .close {
+      position: absolute;
+      right: 25px;
+      top: 0;
+      color: #000;
+      font-size: 35px;
+      font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus {
+      color: red;
+      cursor: pointer;
+    }
+
+    /* Add Zoom Animation */
+    .animate {
+      -webkit-animation: animatezoom 0.6s;
+      animation: animatezoom 0.6s
+    }
+
+    @-webkit-keyframes animatezoom {
+      from {
+        -webkit-transform: scale(0)
+      }
+
+      to {
+        -webkit-transform: scale(1)
+      }
+    }
+
+    @keyframes animatezoom {
+      from {
+        transform: scale(0)
+      }
+
+      to {
+        transform: scale(1)
+      }
+    }
+
+    /* Change styles for span and cancel button on extra small screens */
+    @media screen and (max-width: 300px) {
+      span.psw {
+        display: block;
+        float: none;
+      }
+
+      .cancelbtn {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+
+  <div id="id01" class="modal">
+
+    <form class="modal-content animate" action="LoginServlet" method="post">
+      <div class="imgcontainer">
+        <img src="usersIcon.png" alt="Avatar" class="avatar"> <br> <br>
+        <span style="font-family: Raleway;">Login Area</span>
+      </div>
+
+      <div class="container">
+        <label for="uname"><b>Name on Card</b></label>
+        <label for="uname"><b>Email of Card</b></label>
+        <input type="text" placeholder="Email used while Registration" name="uname" required>
+
+        <label for="uid"><b>Unique ID of Your Card</b></label>
+        <input type="text" placeholder="Enter your Card ID" name="uid" required>
+
+        <label for="psw"><b>Card Password</b></label>
+        <input type="password" placeholder="Your Card Password!" name="psw" required>
+
+
+        <div class="col-sm-12" style="text-align: center;">
+          <input type="radio" name="type" value="Admin"> <span>I'm an Admin!</span> <br>
+          <input type="radio" name="type" value="User"> <span>I'm a Registered User!</span>
+        </div>
+
+        <button type="submit" style="font-family: Raleway;">Login</button>
+        <label>
+          <input type="checkbox" checked="checked" name="remember"> Remember me
+        </label>
+      </div>
+
+      <!-- <div class="container" style="background-color:#f1f1f1"> -->
+        <button type="button" onclick="document.getElementById('id01').style.display='none'"
+          class="cancelbtn">Terminate</button>
+          <button style="width: 20%; margin-left: 2%; font-size: 15px; font-family: Raleway; "><a href="index.html" style="color: white; text-decoration: none;">Home</a></button>
+        <span class="psw"><a href="#" style="text-decoration: none; margin-left: -20%;">Forgot password?</a></span>
+      <!-- </div> -->
+    </form>
+  
+
+</body>
+
+</html>
