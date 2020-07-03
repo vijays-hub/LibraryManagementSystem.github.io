@@ -1,0 +1,1937 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>404Found! | Your All in one Stop</title>
+
+
+<!-- Bootstrap Libraries -->
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script
+	src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- jQuery Library -->
+<script src="jquery-3.4.1.min.js"></script>
+
+
+<style>
+/* Font Start */
+@font-face {
+	font-family: Raleway;
+	src: url(Raleway-SemiBold.ttf);
+}
+
+/* Font Close */
+.container-sm {
+	box-shadow: 20px 20px 50px 10px darkslategrey;
+}
+
+nav {
+	box-shadow: 20px 20px 50px 10px darkcyan;
+}
+
+.nav-link {
+	font-size: 17px;
+	opacity: 0.7;
+	transition: margin-left 1s;
+}
+
+.nav-link:hover {
+	font-weight: bold;
+	opacity: 1.0;
+	margin-left: 5px;
+	color: seagreen;
+}
+
+.nav-link::before {
+	content: '';
+	display: block;
+	width: 0;
+	height: 2px;
+	background: red;
+}
+
+.nav-link:hover::before {
+	width: 100%;
+	transition: width 2s;
+}
+
+.navbar-toggler {
+	width: 60px;
+	height: 50px;
+}
+
+button {
+	outline: none !important;
+}
+
+/* Scroll Indicator Start*/
+.header {
+	position: fixed;
+	top: 0;
+	z-index: 1;
+	width: 100%;
+	background-color: #f1f1f1;
+}
+
+.header h2 {
+	text-align: center;
+}
+
+.progress-container {
+	width: 100%;
+	height: 3px;
+	background: #ccc;
+}
+
+.progress-bar {
+	height: 3px;
+	background: black;
+	width: 0%;
+}
+
+.content {
+	padding: 100px 0;
+	margin: 50px auto 0 auto;
+	width: 80%;
+}
+
+/* Scroll Indicator End */
+
+/* Custom Scroller Start*/
+
+/* width */
+::-webkit-scrollbar {
+	width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	box-shadow: inset 0 0 5px grey;
+	border-radius: 1px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: red;
+	border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: #b30000;
+}
+
+/* Custom Scroller End*/
+
+/* Side Navigation with Opacity */
+body {
+	font-family: Raleway;
+	background-color: white;
+}
+
+.sidenav {
+	margin-top: 150px;
+	height: 80%;
+	width: 0;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color: whitesmoke;
+	overflow: scroll;
+	transition: 0.5s;
+	padding-top: 100px;
+}
+
+.sidenav a {
+	padding: 8px 8px 8px 32px;
+	text-decoration: none;
+	font-size: 25px;
+	color: #818181;
+	display: block;
+	transition: 0.3s;
+}
+
+.sidenav a:hover {
+	color: #b30000;
+	font-size: 27px;
+}
+
+.sidenav .closebtn {
+	position: absolute;
+	top: 0;
+	right: 25px;
+	font-size: 36px;
+	margin-left: 50px;
+}
+
+#main {
+	transition: margin-left .5s;
+	padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+	.sidenav {
+		padding-top: 15px;
+	}
+	.sidenav a {
+		font-size: 18px;
+	}
+}
+
+/* Side Navigation With Opacity End! */
+
+/* Card Buttons Styling */
+.cardButtons {
+	background: none;
+	font-size: 18px;
+	color: black;
+	text-align: center;
+	width: 120px;
+	height: 45px;
+}
+
+.cardButtons:hover {
+	border-bottom: 1px solid red;
+	color: burlywood;
+}
+
+/* Card Buttons Styling End*/
+
+/* Student Anchor Tag */
+.student_anchor {
+	font-size: 16px;
+}
+
+.student_anchor:hover {
+	text-decoration: none;
+	border-bottom: 1px red solid;
+	color: burlywood;
+}
+
+/* Student Anchor Tag End */
+
+/* Staff Anchor Tag */
+.staff_anchor {
+	font-size: 16px;
+}
+
+.staff_anchor:hover {
+	text-decoration: none;
+	border-bottom: 1px red solid;
+	color: burlywood;
+}
+
+/* Staff Anchor Tag */
+
+/* Card Styling */
+.card {
+	border-bottom: 5px solid red;
+	background-color: lightyellow;
+}
+
+/* Modal Box For Sign Up or Login */
+
+/* Button of Modal Box */
+#myBtn {
+	background: none;
+	width: 150px;
+	color: black;
+	border-bottom: 1px solid red;
+}
+
+/* The Modal (background) */
+.modal {
+	display: none;
+	/* Hidden by default */
+	position: fixed;
+	/* Stay in place */
+	z-index: 1;
+	/* Sit on top */
+	padding-top: 100px;
+	/* Location of the box */
+	left: 0;
+	top: 800;
+	width: 100%;
+	/* Full width */
+	height: 100%;
+	/* Full height */
+	overflow: auto;
+	/* Enable scroll if needed */
+	background-color: rgb(0, 0, 0);
+	/* Fallback color */
+	background-color: rgba(0, 0, 0, 0.4);
+	/* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+	background-color: #fefefe;
+	margin: auto;
+	margin-top: 100px;
+	padding: 20px;
+	border: 1px solid #888;
+	width: 80%;
+}
+
+/* The Close Button */
+.close {
+	color: #aaaaaa;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.close:hover, .close:focus {
+	color: #000;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+/* Modal Box for Sign Up or Login */
+
+/* Profile Card Start */
+.card {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	max-width: 300px;
+	margin: auto;
+	text-align: center;
+	font-family: arial;
+}
+
+.card img:hover {
+	opacity: 0.7;
+}
+
+.title {
+	color: grey;
+	font-size: 18px;
+}
+
+button {
+	border: none;
+	outline: 0;
+	display: inline-block;
+	padding: 8px;
+	color: white;
+	background-color: #000;
+	text-align: center;
+	cursor: pointer;
+	width: 100%;
+	font-size: 18px;
+}
+
+a {
+	text-decoration: none;
+	font-size: 22px;
+	color: black;
+}
+
+button:hover, a:hover {
+	opacity: 0.7;
+}
+
+/* Profile Card Ends */
+
+/* Login Form */
+input[type=text], input[type=password] {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	background: none;
+	border: none;
+	border-bottom: 2px solid brown;
+	border-radius: 3%;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+	width: auto;
+	padding: 10px 18px;
+	background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+	text-align: center;
+	margin: 24px 0 12px 0;
+	position: relative;
+}
+
+img.avatar {
+	width: 10%;
+	border-radius: 100%;
+}
+
+span.psw {
+	float: right;
+	padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+	display: none;
+	/* Hidden by default */
+	position: fixed;
+	/* Stay in place */
+	left: 0;
+	top: 0;
+	width: 100%;
+	/* Full width */
+	height: 100%;
+	/* Full height */
+	background-color: rgb(0, 0, 0);
+	/* Fallback color */
+	background-color: rgba(0, 0, 0, 0.4);
+	/* Black w/ opacity */
+	padding-top: 57px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+	background-color: bisque;
+	border-radius: 15%;
+	margin: 0% 25% 0% 30%;
+	border: 1px solid #888;
+	width: 40%;
+	font-family: Raleway;
+	color: teal;
+}
+
+/* Add Zoom Animation */
+.animate {
+	-webkit-animation: animatezoom 0.6s;
+	animation: animatezoom 0.6s
+}
+
+@
+-webkit-keyframes animatezoom {from { -webkit-transform:scale(0)
+	
+}
+
+to {
+	-webkit-transform: scale(1)
+}
+
+}
+@
+keyframes animatezoom {from { transform:scale(0)
+	
+}
+
+to {
+	transform: scale(1)
+}
+
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+	span.psw {
+		display: block;
+		float: none;
+	}
+	.cancelbtn {
+		width: 100%;
+	}
+}
+
+/* Login Form Ends*/
+
+/* Books Styling */
+#imageEffects {
+	position: relative;
+	width: auto;
+}
+
+.image {
+	display: block;
+	width: auto;
+	height: auto;
+}
+
+.overlay {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: lightyellow;
+	overflow: hidden;
+	width: 70%;
+	height: 100%;
+	-webkit-transform: scale(0);
+	-ms-transform: scale(0);
+	transform: scale(0);
+	-webkit-transition: .3s ease;
+	transition: .5s ease;
+	opacity: 80%;
+	margin-left: 13px;
+}
+
+#imageEffects:hover .overlay {
+	-webkit-transform: scale(1);
+	-ms-transform: scale(1);
+	transform: scale(1);
+}
+
+.text {
+	font-size: 18px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	width: 200px;
+	text-align: center;
+	margin-left: -10%;
+}
+
+/* Books Styling End */
+
+/* Sign Up */
+
+/* Add a background color when the inputs get focus */
+input[type=text]:focus, input[type=password]:focus {
+	background-color: #ccc;
+	outline: none;
+}
+
+/* Set a style for all buttons */
+button {
+	background-color: #4CAF50;
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	cursor: pointer;
+	width: 100%;
+	opacity: 1;
+}
+
+button:hover {
+	opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+	padding: 14px 20px;
+	background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+	float: left;
+	width: 50%;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+	.cancelbtn, .signupbtn {
+		width: 100%;
+	}
+}
+
+/* Image Button */
+.myBtn {
+	background-color: #b30000;
+}
+
+textarea:focus {
+	outline: none !important;
+	border: 3px solid red;
+}
+
+/* #one{
+     display: none;
+   }
+   #two{
+     display: none;
+   }
+   #three{
+     display: none;
+   }
+   #four{
+     display: none;
+   }
+   #five{
+     display: none;
+   }
+   #six{
+     display: none;
+   }
+   #seven{
+     display: none;
+   }
+   #eight{
+     display: none;
+   } */
+
+/* Icons */
+.fa {
+	padding: 10px;
+	font-size: 30px;
+	width: 50px;
+	text-align: center;
+	text-decoration: none;
+	margin: 5px 2px;
+	border-radius: 40%;
+}
+
+.fa:hover {
+	opacity: 0.8;
+	transform: rotate(360deg);
+}
+
+.fa-facebook {
+	background: mediumslateblue;
+	color: white;
+}
+
+.fa-twitter {
+	background: #55ACEE;
+	color: white;
+}
+
+.fa-google {
+	background: #dd4b39;
+	color: white;
+}
+
+.fa-instagram {
+	background: orangered;
+	color: white;
+}
+
+.fa-snapchat-ghost {
+	background: #fffc00;
+	color: white;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+#footer a {
+	color: bisque;
+	text-decoration: none;
+	transition: 0.3s;
+}
+
+#footer a:hover {
+	margin-left: 5px;
+	opacity: 0.8;
+	color: tan;
+}
+
+#footer h4 {
+	color: #f44336;
+	transition: ease-in 0.3s;
+}
+
+#footer h4:hover {
+	color: darkkhaki;
+	margin-left: 5px;
+	text-decoration: underline 1px black;
+}
+
+#footer span {
+	color: bisque;
+}
+
+/* Scroll Top */
+#myBtn1 {
+	display: none;
+	position: fixed;
+	bottom: 20px;
+	right: 50px;
+	cursor: pointer;
+	width: 80px;
+}
+
+#myBtn1 img {
+	background-color: peru;
+	border-radius: 50%;
+	opacity: 0.5;
+	box-shadow: 0px 0px 30px 20px red;
+}
+
+#myBtn1 img:hover {
+	opacity: 1;
+}
+</style>
+
+</head>
+
+<body>
+
+	<div class="container-fluid">
+		<div class="page-header">
+			<h1
+				style="text-align: center; background-color: whitesmoke; height: 80px; padding: 15px; margin-bottom: -10px;">
+				<span style="color: red; text-decoration: overline black;">404</span><span
+					style="text-decoration: underline red;">Found!</span>
+			</h1>
+		</div>
+	</div>
+
+
+
+	<nav class="navbar navbar-expand-sm navbar-primary sticky-top"
+		style="height: auto; background-color: lightcyan; border-bottom: 1px solid black;"
+		id="nav">
+
+		<button class="navbar-toggler" type="button" data-toggle="collapse"
+			data-target="#collapsibleNavbar">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="collapsibleNavbar">
+			<ul class="navbar-nav" id="ul">
+				<li class="nav-item"><a class="nav-link" href="index.html">Home</a>
+				</li>
+
+				<li class="nav-item"><a class="nav-link" href="#">Locations
+						and Hours</a></li>
+
+				<li class="nav-item"><a class="nav-link" href="#">Library
+						Services</a></li>
+
+				<li class="nav-item"><a class="nav-link" href="#">Special
+						Collections</a></li>
+
+				<li class="nav-item"><a class="nav-link" href="#">Gallery</a></li>
+
+				<li class="nav-item"><a class="nav-link" href="#">Study and
+						Research Support</a></li>
+				<li class="nav-item" style="margin-right: 150px;"><a
+					class="nav-link" href="#"></a></li>
+
+				<form class="form-inline" action="Google1">
+					<input class="form-control mr-sm-2" type="text"
+						placeholder="Find Something!" name="googleValue"
+						style="padding: 0 0 0 10px; margin-top: -10px; border-bottom: 2px solid red;">
+					<button class="btn btn-success" type="submit"
+						style="width: 80px; margin-top: -5px;">Search</button>
+				</form>
+				<div class="header">
+					<div class="progress-container">
+						<div class="progress-bar" id="myBar"></div>
+					</div>
+				</div>
+			</ul>
+		</div>
+	</nav>
+
+
+	<br>
+	<br>
+
+	<div class="container">
+		<div class="row-sm">
+
+			<span style="font-size: 30px; cursor: pointer;" onclick="openNav()">&#9776;
+				Menu</span>
+
+			<!-- <span style="font-size:30px ; margin-left: 50px;">Put the Login Form at the End (u have created separate
+        page)</span> -->
+			<span></span>
+		</div>
+	</div>
+	<div id="mySidenav" class="sidenav">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		<a href="#">About Us</a> <a href="#">Services</a> <a href="#">Our
+			Clients</a> <a href="#">Contact Us</a> <a href="#"
+			style="font-size: 24px;">Our Price Range</a> <a href="#">Membership</a>
+	</div>
+
+
+	<div class="container-sm" id="one">
+		<br>
+		<h1 style="color: darkcyan; text-align: center;">Digital Library!</h1>
+		<p
+			style="margin-top: -10px; border-bottom: 1px solid red; text-align: center;">Free
+			Online Resources</p>
+		<div class="row">
+
+			<div class="col-sm-4">
+				<br>
+				<div class="card">
+					<img src="online_homework_help-888x444.jpg" alt="Online Tutoring!"
+						style="width: 100%" title="Online Tutoring"> <br>
+					<h2 style="font-family: Raleway;">Free Online Tutoring &
+						Resources While the Library Is Closed</h2>
+					<p style="font-family: Raleway;">Free online learning resources
+						you can use, even while the library is closed. All you need is
+						your library card and PIN!</p>
+					<p style="font-family: Raleway;">
+						<button class="cardButtons">More -></button>
+					</p>
+				</div>
+			</div>
+
+
+			<div class="col-sm-4">
+				<br>
+
+				<div class="card">
+					<img src="ipad_and_coffee-888x444.jpg" alt="digi-Magazines"
+						style="width: 100%" title="Digital Magazines"> <br>
+					<h2 style="font-family: Raleway;">Download Digital Magazines</h2>
+					<p style="font-family: Raleway;">Full digital copies of
+						magazines for your computer, tablet or smartphone. Choose from
+						many popular titles, with no due dates.</p>
+					<p style="font-family: Raleway;">Download the new 404Found! app
+						for iPhones, iPads, iPods, and Android devices.</p>
+					<p style="font-family: Raleway;">
+						<button class="cardButtons">More -></button>
+					</p>
+				</div>
+			</div>
+
+
+
+			<div class="col-sm-4">
+				<br>
+
+				<div class="card">
+					<img src="covid-19.php" alt="John" style="width: 100%"
+						title="Novel CoVid-19"> <br>
+					<h2 style="font-family: Raleway;">COVID-19 and the Library</h2>
+
+
+					<p style="font-family: Raleway;">Check here for the latest
+						updates on the Library's response to the coronavirus.</p>
+					<p style="font-family: Raleway;">We will keep this page up to
+						date with any changes in our service . The health and wellbeing of
+						our staff and visitors is our priority.</p>
+					<p style="font-family: Raleway;">
+						<button class="cardButtons">More -></button>
+					</p>
+				</div>
+			</div>
+		</div>
+		<br> <br> <br> <br>
+	</div>
+	<br>
+	<br>
+
+	<div class="container-sm" id="two">
+		<br>
+		<h1
+			style="font-family: Raleway; text-align: center; border-bottom: 1px solid red; padding-bottom: 5px;">
+			Access.Anytime.Anywhere.!</h1>
+		<br>
+		<div class="row">
+			<div class="col-sm-4">
+				<div class="card">
+					<img src="Music.svg" alt="Library_Services"
+						style="width: 100%; height: 150px; margin-top: 20px;"
+						title="Online Music"> <br>
+					<h2 style="font-family: Raleway; text-align: center;">Music</h2>
+
+					<p style="font-family: Raleway;">
+						<button class="cardButtons">More -></button>
+					</p>
+				</div>
+				<br>
+			</div>
+			<div class="col-sm-4">
+				<div class="card">
+					<img src="E-Books.svg" alt="Library_Services"
+						style="width: 100%; height: 150px; margin-top: 20px;"
+						title="E-Books"> <br>
+					<h3 style="font-family: Raleway; text-align: center;">E-Books
+						& Audiobooks</h3>
+
+					<p style="font-family: Raleway;">
+						<button class="cardButtons">More -></button>
+					</p>
+				</div>
+				<br>
+			</div>
+			<br> <br>
+			<div class="col-sm-4">
+				<div class="card">
+					<img src="Movies & TV.svg" alt="Library_Services"
+						style="width: 100%; height: 150px; margin-top: 20px;"
+						title="Online Movies & TV"> <br>
+					<h2 style="font-family: Raleway; text-align: center;">Movies &
+						TV</h2>
+
+					<p style="font-family: Raleway;">
+						<button class="cardButtons">More -></button>
+					</p>
+				</div>
+				<br>
+			</div>
+		</div>
+		<br> <br>
+	</div>
+
+	<br>
+	<br>
+
+	<div class="container-sm" id="three">
+		<br>
+		<h2
+			style="border-bottom: 1px red solid; width: 300px; text-align: center; margin-left: 35%;">How
+			can we Help?</h2>
+		<p>Books are just the beginning. Our dedicated staff can help you
+			to find what you need, access primary research material, and develop
+			your study and research skills.</p>
+		<div class="row">
+			<div class="col-sm-4">
+				<br>
+				<div class="card">
+					<img src="Library_Services.jpg" alt="Library_Services"
+						style="width: 100%" title="Library Services"> <br> <br>
+					<h2 style="font-family: Raleway;">Library Services</h2>
+					<p style="font-family: Raleway;">What you need to know about
+						borrowing, renewing and returning the items you need and how to
+						request items that we don’t have in our libraries.</p>
+					<p style="font-family: Raleway;">
+						<button class="cardButtons">More -></button>
+					</p>
+				</div>
+			</div>
+
+
+			<div class="col-sm-4">
+				<br>
+
+				<div class="card">
+					<img src="Study Support.jpg" alt="Study Support"
+						style="width: 100%" title="Study Support"> <br> <br>
+					<h2 style="font-family: Raleway;">Study support</h2>
+					<p style="font-family: Raleway;">Improve skills with our Online
+						resources, workshops, 1-to-1 appointments, drop-in sessions and
+						teaching in the curriculum.</p>
+					<br>
+					<p style="font-family: Raleway;">
+						<button class="cardButtons">More -></button>
+					</p>
+				</div>
+			</div>
+
+
+
+			<div class="col-sm-4">
+				<br>
+
+				<div class="card">
+					<img src="special_collections.jpg" alt="Special Collections"
+						style="width: 100%" title="Special_Collections"> <br> <br>
+					<h2 style="font-family: Raleway;">Special Collections</h2>
+
+					<p style="font-family: Raleway;">Delve into our outstanding
+						collections of rare books, manuscripts, art and archives and find
+						unique primary research material.</p>
+					<br> <br>
+					<p style="font-family: Raleway; margin-top: -11px;">
+						<button class="cardButtons" style="margin-top: -4px;">More
+							-></button>
+					</p>
+				</div>
+			</div>
+		</div>
+		<br>
+	</div>
+	<br>
+	<br>
+
+
+	<div class="container-sm" id="four">
+		<br>
+		<h2
+			style="border-bottom: 1px red solid; width: 400px; padding-left: 60px; margin-left: 35%;">Student
+			Essentials</h2>
+		<br> <br>
+		<div class="row" style="margin-left: 10%;">
+			<div class="col-sm-4">
+				<a href="" class="student_anchor">Referencing ></a> <br> <br>
+				<a href="" class="student_anchor">Academic Skills ></a>
+
+			</div>
+			<div class="col-sm-4">
+				<a href="" class="student_anchor">Book a Room ></a> <br> <br>
+				<a href="" class="student_anchor">Reading Skills ></a>
+
+			</div>
+			<div class="col-sm-4">
+				<a href="" class="student_anchor">Subject Databases ></a> <br>
+				<br> <a href="" class="student_anchor">Dissertation
+					Examples ></a>
+
+			</div>
+		</div>
+		<br> <br>
+	</div>
+
+	<br>
+	<br>
+	<div class="container-sm " id="five">
+		<h2
+			style="border-bottom: 1px red solid; width: 400px; padding-left: 80px; margin-left: 35%;">Staff
+			Essentials</h2>
+		<br> <br>
+		<div class="row" style="margin-left: 10%;">
+			<div class="col-sm-4">
+				<a href="" class="staff_anchor">Open Access ></a> <br> <br>
+				<a href="" class="staff_anchor">Make Items Available for
+					Students ></a>
+
+			</div>
+			<div class="col-sm-4">
+				<a href="" class="staff_anchor">Research Data Management ></a> <br>
+				<br> <a href="" class="staff_anchor">Suggest a Purchase ></a>
+
+			</div>
+			<div class="col-sm-4">
+				<a href="" class="staff_anchor">Develop your Students Academic
+					Skills ></a> <br> <br> <a href="" class="staff_anchor">Workshops
+					and Events ></a>
+
+			</div>
+		</div>
+		<br> <br>
+	</div>
+
+	<br>
+	<br>
+
+
+	<div class="container-sm" id="six">
+		<h2
+			style="width: 400px; border-bottom: 1px solid red; text-align: center; margin-left: 35%;">Latest
+			at 404Found!</h2>
+
+		<!-- Adult Books -->
+
+		<br> <br>
+		<h3 style="text-decoration: underline;">Adults -></h3>
+		<br>
+		<div class="row">
+
+			<div class="col-sm-3" id="imageEffects">
+				<img src="Bubble-in-the-sun.jpg" alt="Avatar" class="image"> <br>
+				<h5>
+					Bubble-in-the-sun
+					</h2>
+					<div class="overlay">
+						<div class="text">
+							<button class="myBtn">Read Now!</button>
+						</div>
+					</div>
+			</div>
+
+			<div class="col-sm-3" id="imageEffects">
+				<img src="driving-while-black.jpg" alt="Avatar" class="image">
+				<br>
+				<h5>
+					Driving-while-black
+					</h2>
+					<div class="overlay">
+						<div class="text">
+							<button class="myBtn">Read Now!</button>
+						</div>
+					</div>
+			</div>
+
+			<div class="col-sm-3" id="imageEffects">
+				<img src="murder-by-the-book.jpg" alt="Avatar" class="image">
+				<br>
+				<h5>
+					Murder-by-the-book
+					</h2>
+					<div class="overlay">
+						<div class="text">
+							<button class="myBtn">Read Now!</button>
+						</div>
+					</div>
+			</div>
+
+
+			<div class="col-sm-3" id="imageEffects">
+				<img src="Bubble-in-the-sun.jpg" alt="Avatar" class="image"> <br>
+				<h5 style="text-align: justify;">
+					Bubble-In-The-Sun
+					</h2>
+					<div class="overlay">
+						<div class="text">
+							<button class="myBtn">Read Now!</button>
+						</div>
+					</div>
+			</div>
+
+
+		</div>
+
+		<br> <br>
+
+		<div class="row">
+
+			<div class="col-sm-3" id="imageEffects">
+				<img src="Race-Against-Time.jpg" alt="Avatar" class="image"> <br>
+				<h5>
+					Race-Against-Time
+					</h2>
+					<div class="overlay">
+						<div class="text">
+							<button class="myBtn">Read Now!</button>
+						</div>
+					</div>
+			</div>
+
+			<div class="col-sm-3" id="imageEffects">
+				<img src="The-Falcon-Thief.jpg" alt="Avatar" class="image"> <br>
+				<h5>
+					The-Falcon-Thief
+					</h2>
+					<div class="overlay">
+						<div class="text">
+							<button class="myBtn">Read Now!</button>
+						</div>
+					</div>
+			</div>
+
+			<div class="col-sm-3" id="imageEffects">
+				<img src="Genuine-Fakes.jpg" alt="Avatar" class="image"> <br>
+				<h5>
+					Genuine Fakes
+					</h2>
+					<div class="overlay">
+						<div class="text">
+							<button class="myBtn">Read Now!</button>
+						</div>
+					</div>
+			</div>
+
+
+			<div class="col-sm-3" id="imageEffects">
+				<img src="How-to-Disappear.jpg" alt="Avatar" class="image"> <br>
+				<h5 style="text-align: justify;">
+					How to Disappear
+					</h2>
+					<div class="overlay">
+						<div class="text">
+							<button class="myBtn">Read Now!</button>
+						</div>
+					</div>
+			</div>
+
+
+		</div>
+
+
+		<!-- Children Books-->
+
+		<br> <br>
+		<h3 style="text-decoration: underline;">Kids -></h3>
+		<br>
+		<div class="row">
+
+			<div class="col-sm-3" id="imageEffects">
+				<img src="Another-Way-to-Climb-A-Tree.jpg" alt="Avatar"
+					class="image"> <br>
+				<h5>
+					Climb-A-Tree
+					</h2>
+					<div class="overlay">
+						<div class="text">
+							<button class="myBtn">Read Now!</button>
+						</div>
+					</div>
+			</div>
+
+			<div class="col-sm-3" id="imageEffects">
+				<img src="Tallulahs-Tap-Shoes.jpg" alt="Avatar" class="image">
+				<br>
+				<h5>
+					Tallulahs-Tap-Shoes
+					</h2>
+					<div class="overlay">
+						<div class="text">
+							<button class="myBtn">Read Now!</button>
+						</div>
+					</div>
+			</div>
+
+			<div class="col-sm-3" id="imageEffects">
+				<img src="Money-and-Elephant-and-The-Babysitting-adventure.jpg"
+					alt="Avatar" class="image"> <br>
+				<h5>
+					Money-and-Elephant
+					</h2>
+					<div class="overlay">
+						<div class="text">
+							<button class="myBtn">Read Now!</button>
+						</div>
+					</div>
+			</div>
+
+
+			<div class="col-sm-3" id="imageEffects">
+				<img src="Ella-Unleashed.jpg" alt="Avatar" class="image"> <br>
+				<h5 style="text-align: justify;">
+					Ella-Unleashed
+					</h2>
+					<div class="overlay">
+						<div class="text">
+							<button class="myBtn">Read Now!</button>
+						</div>
+					</div>
+			</div>
+
+
+		</div>
+
+		<br> <br>
+
+		<div class="row">
+
+			<div class="col-sm-3" id="imageEffects">
+				<img src="Belly-Up.jpg" alt="Avatar" class="image"> <br>
+				<h5>
+					Belly-Up
+					</h2>
+					<div class="overlay">
+						<div class="text">
+							<button class="myBtn">Read Now!</button>
+						</div>
+					</div>
+			</div>
+
+			<div class="col-sm-3" id="imageEffects">
+				<img src="Wilderness-Earths-Amazing-Habitats.jpg" alt="Avatar"
+					class="image"> <br>
+				<h5>
+					Wilderness-Earths-Amazing-Habitats
+					</h2>
+					<div class="overlay">
+						<div class="text">
+							<button class="myBtn">Read Now!</button>
+						</div>
+					</div>
+			</div>
+
+			<div class="col-sm-3" id="imageEffects">
+				<img src="King-Kayla-and-The-case-of-the-missing-Dog-Treats.jpg"
+					alt="Avatar" class="image"> <br>
+				<h5>
+					King and Kayla
+					</h2>
+					<div class="overlay">
+						<div class="text">
+							<button class="myBtn">Read Now!</button>
+						</div>
+					</div>
+			</div>
+
+
+			<div class="col-sm-3" id="imageEffects">
+				<img src="Heroes-of-the-environment.jpg" alt="Avatar" class="image">
+				<br>
+				<h5 style="text-align: justify;">
+					Heroes-of-the-environment
+					</h2>
+					<div class="overlay">
+						<div class="text">
+							<button class="myBtn">Read Now!</button>
+						</div>
+					</div>
+			</div>
+
+
+		</div>
+
+
+		<!-- Teen Books-->
+
+		<br> <br>
+		<h3 style="text-decoration: underline;">Teens -></h3>
+		<br>
+		<div class="row">
+
+			<div class="col-sm-3" id="imageEffects">
+				<img src="the-gravity-of-us.jpg" alt="Avatar" class="image"> <br>
+				<h5>
+					The-gravity-of-us
+					</h2>
+					<div class="overlay">
+						<div class="text">
+							<button class="myBtn">Read Now!</button>
+						</div>
+					</div>
+			</div>
+
+			<div class="col-sm-3" id="imageEffects">
+				<img src="Ink-in-the-blood.jpg" alt="Avatar" class="image"> <br>
+				<h5>
+					Ink-in-the-blood
+					</h2>
+					<div class="overlay">
+						<div class="text">
+							<button class="myBtn">Read Now!</button>
+						</div>
+					</div>
+			</div>
+
+			<div class="col-sm-3" id="imageEffects">
+				<img src="how-to-build-a-herat.jpg" alt="Avatar" class="image">
+				<br>
+				<h5>
+					how-to-build-a-heart
+					</h2>
+					<div class="overlay">
+						<div class="text">
+							<button class="myBtn">Read Now!</button>
+						</div>
+					</div>
+			</div>
+
+
+			<div class="col-sm-3" id="imageEffects">
+				<img src="Shadow-of-the-batgirl.jpg" alt="Avatar" class="image">
+				<br>
+				<h5 style="text-align: justify;">
+					Shadow-of-the-batgirl
+					</h2>
+					<div class="overlay">
+						<div class="text">
+							<button class="myBtn">Read Now!</button>
+						</div>
+					</div>
+			</div>
+
+
+		</div>
+
+
+
+		<!-- Movie Books-->
+		<br> <br>
+		<h3 style="text-decoration: underline;">Movies -></h3>
+		<br>
+		<div class="row">
+
+			<div class="col-sm-3" id="imageEffects">
+				<img src="Indian-Horse.png" alt="Avatar" class="image"> <br>
+				<h5>
+					Indian-Horse
+					</h2>
+					<div class="overlay">
+						<div class="text">
+							<button class="myBtn">Read Now!</button>
+						</div>
+					</div>
+			</div>
+
+			<div class="col-sm-3" id="imageEffects">
+				<img src="Doubting-Thomas.png" alt="Avatar" class="image"> <br>
+				<h5>
+					Doubting-Thomas
+					</h2>
+					<div class="overlay">
+						<div class="text">
+							<button class="myBtn">Read Now!</button>
+						</div>
+					</div>
+			</div>
+
+			<div class="col-sm-3" id="imageEffects">
+				<img src="The-Brave.png" alt="Avatar" class="image"> <br>
+				<h5>
+					The Brave
+					</h2>
+					<div class="overlay">
+						<div class="text">
+							<button class="myBtn">Read Now!</button>
+						</div>
+					</div>
+			</div>
+
+
+			<div class="col-sm-3" id="imageEffects">
+				<img src="The-Watchmans-Canoe.png" alt="Avatar" class="image">
+				<br>
+				<h5 style="text-align: justify;">
+					Watchmans-Canoe
+					</h2>
+					<div class="overlay">
+						<div class="text">
+							<button class="myBtn">Read Now!</button>
+						</div>
+					</div>
+			</div>
+
+
+		</div>
+		<br> <br>
+
+	</div>
+
+	<br>
+	<br>
+
+
+	<div class="container">
+
+
+		<!-- The Modal -->
+		<div id="myModal" class="modal">
+			<div class="modal-content">
+				<span class="close">&times;</span>
+				<p>Please Sign Up or Login with ur Library Card ID to read this
+					Content!</p>
+				<br> <br> <span>Want to hop in!?
+					<button
+						onclick="document.getElementById('id01').style.display='block'"
+						style="width: 250px; margin-left: 78px;" id="SignUp">Get
+						Membership</button>
+				</span> <span>I own a Card Already ->
+					<button
+						onclick="document.getElementById('id02').style.display='block'"
+						style="width: 250px; margin-left: 20px;">Login with Card</button>
+				</span>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- Sign Up -->
+
+	<div id="id01" class="modal">
+		<span onclick="document.getElementById('id01').style.display='none'"
+			class="close" title="Close Modal">&times;</span>
+		<form class="modal-content" action="SignUpServlet" method="post">
+			<div class="container">
+				<h1>Sign Up</h1>
+				<p>Please fill in this form to get your card now!.</p>
+				<hr>
+				<label for="email"><b>Email</b></label> <input type="text"
+					placeholder="Enter your Email" name="email" required> <label
+					for="psw"><b>Create a Password</b></label> <input type="password"
+					placeholder="Enter your Password" name="psw" required> <label
+					for="psw-repeat"><b>Confirm Password</b></label> <input
+					type="password" placeholder="Confirm Your Password"
+					name="psw-repeat" required> <label> <input
+					type="checkbox" checked="checked" name="remember"
+					style="margin-bottom: 15px"> Remember me
+				</label>
+
+				<p>
+					By creating an account you agree to our <a href="#"
+						style="color: dodgerblue">Terms & Privacy</a>.
+				</p>
+
+				<div class="clearfix">
+					<button type="button"
+						onclick="document.getElementById('id01').style.display='none'"
+						class="cancelbtn">Terminate</button>
+					<button type="submit" class="signupbtn">Get Card!</button>
+				</div>
+			</div>
+		</form>
+	</div>
+
+
+	<!-- Login -->
+
+	<div id="id02" class="modal">
+
+		<form class="modal-content animate" action="LoginServlet"
+			method="post">
+			<div class="imgcontainer">
+				<img src="usersIcon.png" alt="Avatar" class="avatar"> <br>
+				<br> <span style="font-family: Raleway;">Login Area</span>
+			</div>
+
+			<div class="container">
+				<label for="uname"><b>Email of Card</b></label> <input type="text"
+					placeholder="Email used while Registration" name="uname" required>
+
+				<label for="uid"><b>Unique ID of Your Card</b></label> <input
+					type="text" placeholder="Enter your Card ID" name="uid" required>
+
+				<label for="psw"><b>Card Password</b></label> <input type="password"
+					placeholder="Your Card Password!" name="psw" required>
+
+
+				<div class="col-sm-12" style="text-align: center;">
+					<input type="radio" name="type" value="Admin"> <span>I'm
+						an Admin!</span> <br> <input type="radio" name="type" value="User">
+					<span>I'm a Registered User!</span>
+				</div>
+
+				<button type="submit">Login</button>
+				<label> <input type="checkbox" checked="checked"
+					name="remember"> Remember me
+				</label>
+			</div>
+
+			<div class="container">
+				<button type="button"
+					onclick="document.getElementById('id02').style.display='none'"
+					class="cancelbtn">Terminate</button>
+				<span class="psw"><a href="#" style="text-decoration: none;">Forgot
+						password?</a></span>
+			</div>
+		</form>
+	</div>
+
+	<div class="container-sm" id="seven">
+		<div class="row-sm">
+			<div id="col-sm-12" style="margin-left: 35%;">
+				<h3>Find Us Interesting?</h3>
+				<p>Sign Up or Login Now to Access our extravagant features</p>
+				<br>
+				<button
+					onclick="document.getElementById('id01').style.display='block'"
+					style="width: auto;">Sign Up</button>
+				[OR]
+				<button
+					onclick="document.getElementById('id02').style.display='block'"
+					style="width: auto; height: 55px;" id="loginBtn">Login!</button>
+			</div>
+			<br> <br>
+		</div>
+	</div>
+	<br>
+
+	<div class="container-sm" id="eight"
+		style="border: 1px solid red; border-radius: 25%; background-color: wheat;">
+		<br>
+		<h4 style="text-align: center; margin-right: 80px;">Write Us!</h4>
+		<br>
+		<div class="row">
+
+			<div class="col-sm-5">
+				<input type="text" placeholder="Your Name"
+					style="background-color: whitesmoke;"> <input type="text"
+					placeholder="Contact Number" style="background-color: whitesmoke;">
+				<input type="text" placeholder="Email Address"
+					style="background-color: whitesmoke;"> <input type="submit"
+					value="Send Us"
+					style="background-color: greenyellow; margin-left: 35%; height: 50px; width: 100px;"
+					id="writeUs">
+
+			</div>
+
+			<div class="col-sm-6">
+				<textarea name="" id="textarea" cols="70" rows="10"
+					style="background-color: whitesmoke; color: royalblue;">
+        Jot Us Down Something!
+      </textarea>
+
+			</div>
+		</div>
+		<br> <br>
+	</div>
+
+	<br>
+
+	<div class="container-fluid-sm" style="background-color: teal;"
+		id="footer">
+		<div class="row">
+
+			<div class="col-sm-3">
+				<br> <br>
+				<div class="card"
+					style="border: none; font-family: Raleway; background-color: teal;">
+					<img src="Me.png" alt="Vijay S Kumar"
+						style="width: 100%; height: 50%;">
+					<h1 style="color: wheat">Vijay S Kumar</h1>
+					<p class="title" style="color: #000;">CEO & Founder, 404Found!</p>
+					<p>Available At:</p>
+					<div>
+						<a href="https://www.facebook.com/profile.php?id=100005905140398"
+							class="fa fa-facebook"></a> <a
+							href="https://twitter.com/urstruly_vijay_" class="fa fa-twitter"></a>
+						<a href="https://www.instagram.com/_.winning._.looser._/"
+							class="fa fa-instagram"></a> <a
+							href="https://www.snapchat.com/add/tony_starkb4u"
+							class="fa fa-snapchat-ghost"></a>
+					</div>
+					<br>
+				</div>
+
+				<br> <br>
+
+			</div>
+
+			<br>
+
+			<div class="col-sm-3">
+				<br>
+				<h4>Your Library</h4>
+				<br> <span><a href="">About</a> </span> <br> <span><a
+					href="">History</a> </span> <br> <span></span><a href="">Staff</a> </span> <br>
+				<span></span><a href="">Board of Trustees</a> </span> <br> <span></span><a
+					href="">Friends of Library</a> </span> <br> <span></span><a href="">Career</a>
+				</span> <br> <span></span><a href="">Library Vote</a> </span> <br>
+			</div>
+
+			<div class="col-sm-3">
+				<br>
+				<h4>How Do I?</h4>
+				<br> <span><a href="">Get a Card</a> </span> <br> <span><a
+					href="">Manage My Account</a> </span> <br> <span><a href="">View
+						Event Calender</a> </span> <br> <span><a href="">Reserve a
+						Room</a> </span> <br> <span><a href="">Get Help</a> </span> <br> <span><a
+					href="">Volunteer and Donate</a> </span> <br>
+			</div>
+
+			<div class="col-sm-3">
+				<br>
+				<h4>Visit 404Found!</h4>
+				<br> <span>Monday-Thursday: 9am-9pm.</span> <br> <span>Friday:
+					9am-6pm.</span> <br> <span>Saturday: 9am-5pm.</span> <br> <span>Sunday:
+					12pm-5pm.</span> <br> <br> <span
+					style="border-bottom: 1px solid black;">Contact: </span> <br>
+				<span>+91 966-322-9353</span> <br> <br> <span
+					style="border-bottom: 1px solid black;">Find Us At:</span> <br>
+				<span>1st Cross, Gowdanapalya, </span><br> <span>Near
+					Srinivasa Theatre,</span> <br> <span>Bangalore (South) - 64</span>
+
+			</div>
+
+		</div>
+
+		<div class="row">
+
+			<div class="col-sm-6"></div>
+			<div class="col-sm-6" style="margin-top: -180px;">
+				<br>
+				<h4>
+					Subscribe for Newsletter
+					</h5>
+					<br> <input type="text" placeholder="Enter Email Here"
+						style="width: 80%; height: 30px; border-bottom: 1px solid wheat; text-align: center; color: #111;">
+					<input type="submit" value="Subscribe"
+						style="background-color: yellow;">
+			</div>
+		</div>
+	</div>
+
+	<div class="container-fluid bg-dark">
+		<div class="row">
+			<div class="col-sm-12"
+				style="height: auto; border-top: 2px solid red;">
+				<pre
+					style="text-align: center; font-size: 20px; font-family: Raleway; color: wheat"> @ 2020 404Found! . | All Rights Reserved | Idea of: <a
+						href="https://www.instagram.com/_.winning._.looser._/"
+						style="color: white">Vijay S Kumar</a>       
+         Select Language: 
+         <select name="" id="" style="background-color: slategray;">
+          <option selected="true" disabled="disabled">Indian Languages</option>
+          <option>Kannada</option>
+          <option>Telugu</option>
+          <option>Tamil</option>
+          <option>Hindi</option>
+          <option>Malayalam</option>
+         </select> 
+         <select name="" id=""
+						style="background-color: slategray; margin-left: 10px;">
+        <option selected="true" disabled="disabled">International</option>
+         <option>English</option>
+         <option>French</option>
+         <option>German</option>
+         <option>Japanese</option>
+         <option>Korean</option>
+         <option>Spanish</option>
+
+        </select> </pre>
+			</div>
+		</div>
+	</div>
+
+	<button onclick="topFunction()" id="myBtn1" title="Go to top"
+		style="background: none;">
+		<img src="arrow_top-512.png" alt="" width="60px">
+	</button>
+
+
+
+
+
+
+
+
+
+
+	<script>
+		$("#nav").mouseleave(function() {
+			$("#one").slideDown(5000)
+		})
+
+		$("#one").mouseleave(function() {
+			$("#two").slideDown(5000)
+		})
+
+		$("#two").mouseleave(function() {
+			$("#three").slideDown(5000)
+		})
+
+		$("#three").mouseleave(function() {
+			$("#four").slideDown(5000)
+		})
+
+		$("#four").mouseleave(function() {
+			$("#five").slideDown(5000)
+		})
+
+		$("#five").mouseleave(function() {
+			$("#six").slideDown(5000)
+		})
+
+		$("#six").mouseleave(function() {
+			$("#seven").slideDown(5000)
+		})
+
+		$("#seven").mouseleave(function() {
+			$("#eight").slideDown(5000)
+		})
+
+		// Content Indicator
+		// When the user scrolls the page, execute myFunction 
+		window.onscroll = function() {
+			myFunction()
+		};
+
+		function myFunction() {
+			var winScroll = document.body.scrollTop
+					|| document.documentElement.scrollTop;
+			var height = document.documentElement.scrollHeight
+					- document.documentElement.clientHeight;
+			var scrolled = (winScroll / height) * 100;
+			document.getElementById("myBar").style.width = scrolled + "%";
+		}
+
+		// Side Naviagtion Bar Start
+		function openNav() {
+			document.getElementById("mySidenav").style.width = "250px";
+			document.getElementById("main").style.marginLeft = "250px";
+			document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+		}
+
+		function closeNav() {
+			document.getElementById("mySidenav").style.width = "0";
+			document.getElementById("main").style.marginLeft = "0";
+			document.body.style.backgroundColor = "white";
+		}
+
+		// Side Nav bar End
+
+		// Modal Box Start
+
+		// Get the modal
+		var modal = document.getElementById("myModal");
+
+		// Get the button that opens the modal
+
+		// Adults
+		var btn = document.getElementsByClassName("myBtn")[0];
+		var btn1 = document.getElementsByClassName("myBtn")[1];
+		var btn2 = document.getElementsByClassName("myBtn")[2];
+		var btn3 = document.getElementsByClassName("myBtn")[3];
+		var btn4 = document.getElementsByClassName("myBtn")[4];
+		var btn5 = document.getElementsByClassName("myBtn")[5];
+		var btn6 = document.getElementsByClassName("myBtn")[6];
+		var btn7 = document.getElementsByClassName("myBtn")[7];
+
+		// Kids
+		var btn8 = document.getElementsByClassName("myBtn")[8];
+		var btn9 = document.getElementsByClassName("myBtn")[9];
+		var btn10 = document.getElementsByClassName("myBtn")[10];
+		var btn11 = document.getElementsByClassName("myBtn")[11];
+		var btn12 = document.getElementsByClassName("myBtn")[12];
+		var btn13 = document.getElementsByClassName("myBtn")[13];
+		var btn14 = document.getElementsByClassName("myBtn")[14];
+		var btn15 = document.getElementsByClassName("myBtn")[15];
+
+		// Kids
+		var btn16 = document.getElementsByClassName("myBtn")[16];
+		var btn17 = document.getElementsByClassName("myBtn")[17];
+		var btn18 = document.getElementsByClassName("myBtn")[18];
+		var btn19 = document.getElementsByClassName("myBtn")[19];
+
+		// Movies
+		var btn20 = document.getElementsByClassName("myBtn")[20];
+		var btn21 = document.getElementsByClassName("myBtn")[21];
+		var btn22 = document.getElementsByClassName("myBtn")[22];
+		var btn23 = document.getElementsByClassName("myBtn")[23];
+
+		// Get the <span> element that closes the modal
+		var span = document.getElementsByClassName("close")[0];
+
+		// When the user clicks the button, open the modal
+
+		// Adults
+		btn.onclick = function() {
+			modal.style.display = "block";
+		}
+		btn1.onclick = function() {
+			modal.style.display = "block";
+		}
+		btn2.onclick = function() {
+			modal.style.display = "block";
+		}
+		btn3.onclick = function() {
+			modal.style.display = "block";
+		}
+		btn4.onclick = function() {
+			modal.style.display = "block";
+		}
+		btn5.onclick = function() {
+			modal.style.display = "block";
+		}
+		btn6.onclick = function() {
+			modal.style.display = "block";
+		}
+		btn7.onclick = function() {
+			modal.style.display = "block";
+		}
+
+		// Kids
+		btn8.onclick = function() {
+			modal.style.display = "block";
+		}
+		btn9.onclick = function() {
+			modal.style.display = "block";
+		}
+		btn10.onclick = function() {
+			modal.style.display = "block";
+		}
+		btn11.onclick = function() {
+			modal.style.display = "block";
+		}
+		btn12.onclick = function() {
+			modal.style.display = "block";
+		}
+		btn13.onclick = function() {
+			modal.style.display = "block";
+		}
+		btn14.onclick = function() {
+			modal.style.display = "block";
+		}
+		btn15.onclick = function() {
+			modal.style.display = "block";
+		}
+
+		// Teens
+		btn16.onclick = function() {
+			modal.style.display = "block";
+		}
+		btn17.onclick = function() {
+			modal.style.display = "block";
+		}
+		btn18.onclick = function() {
+			modal.style.display = "block";
+		}
+		btn19.onclick = function() {
+			modal.style.display = "block";
+		}
+
+		// Movies
+		btn20.onclick = function() {
+			modal.style.display = "block";
+		}
+		btn21.onclick = function() {
+			modal.style.display = "block";
+		}
+		btn22.onclick = function() {
+			modal.style.display = "block";
+		}
+		btn23.onclick = function() {
+			modal.style.display = "block";
+		}
+
+		// When the user clicks on <span> (x), close the modal
+		span.onclick = function() {
+			modal.style.display = "none";
+		}
+
+		// When the user clicks anywhere outside of the modal, close it
+		window.onclick = function(event) {
+			if (event.target == modal) {
+				modal.style.display = "none";
+			}
+		}
+
+		// Modal Box End
+
+		// Sign Up and Login
+		// Get the modal
+		var modall = document.getElementById('id01');
+		var modalll = document.getElementById('id02');
+
+		// When the user clicks anywhere outside of the modal, close it
+		window.onclick = function(event) {
+			if (event.target == modall) {
+				modall.style.display = "none";
+			}
+		}
+		window.onclick = function(event) {
+			if (event.target == modalll) {
+				modalll.style.display = "none";
+			}
+		}
+
+		$("input[value=Subscribe]")
+				.click(
+						function() {
+							$("input[value=Subscribe]").val("Subscribed!").css(
+									{
+										"background-color" : "limegreen",
+										"color" : "white"
+									})
+							alert("Subscribed! You will be recieving all Newsletters to this E-mail")
+						})
+
+		$("input[id=writeUs]").click(
+				function() {
+					$("input[id=writeUs]").val("Sent !").css(
+							"background-color", "limegreen").css("color",
+							"white")
+					alert("Thank You For Writing Us!")
+				})
+
+		// Scroll Back To Top
+		var mybutton = document.getElementById("myBtn1");
+
+		window.onscroll = function() {
+			scrollFunction()
+		};
+
+		function scrollFunction() {
+			if (document.body.scrollTop > 20
+					|| document.documentElement.scrollTop > 20) {
+				mybutton.style.display = "block";
+			} else {
+				mybutton.style.display = "none";
+			}
+		}
+
+		// When the user clicks on the button, scroll to the top of the document
+		function topFunction() {
+			document.body.scrollTop = 0;
+			document.documentElement.scrollTop = 0;
+		}
+	</script>
+
+
+
+
+
+
+</body>
+
+</html>
